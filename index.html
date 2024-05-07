@@ -18,17 +18,12 @@
     <h1>Hello</h1>
 
 <section>
-
     <pre><code id="webview_data"></code></pre>
-    <div class="hint">
-        Version: <span id="ver"></span>,
-        platform: <span id="platform"></span>
-    </div>
 </section>
 
 <script type="application/javascript">
 
-    document.getElementById('webview_data').innerHTML         = JSON.stringify(Telegram.WebApp.initDataUnsafe, null, 2);
+    document.getElementById('webview_data').innerHTML = JSON.stringify(Telegram.WebApp.initDataUnsafe, null, 2);
 
 </script>
 
